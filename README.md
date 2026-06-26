@@ -9,7 +9,7 @@ brew tap encratahq/tap
 brew install encrata
 ```
 
-Then authenticate:
+Then authenticate
 
 ```bash
 encrata config set-key YOUR_API_KEY
