@@ -11,7 +11,7 @@ class Encrata < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Encratahq/encrata-cli/releases/download/v0.4.1/encrata_0.4.1_darwin_amd64.tar.gz"
-      sha256 "daedbeb41fd8977c6c3d15dbde726b45fa7edc1ba3d6cba4a371eb87cbccb251"
+      sha256 "c04c3d29c55fb7e3879d580817ac8484c38cbb35ff749b6bcba675542fb03d4b"
 
       define_method(:install) do
         bin.install "encrata"
@@ -19,7 +19,7 @@ class Encrata < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Encratahq/encrata-cli/releases/download/v0.4.1/encrata_0.4.1_darwin_arm64.tar.gz"
-      sha256 "66c328b55af13b78aa5114c60d7d5a58c04e818dc751f43676ca21664557f7ab"
+      sha256 "8bed43d33414b6cf94676f17013c458fab679a39a65b0ae81ded9e8f6058114b"
 
       define_method(:install) do
         bin.install "encrata"
@@ -30,14 +30,14 @@ class Encrata < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Encratahq/encrata-cli/releases/download/v0.4.1/encrata_0.4.1_linux_amd64.tar.gz"
-      sha256 "9c685791437d9b7c246243aa001d3f6b2c2f796c544e0cda4abdbf38542a42e6"
+      sha256 "cf8b9a85420cff84edf66a32ca830e81acc2a91845ebfce684ab9ae1774ee8bc"
       define_method(:install) do
         bin.install "encrata"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Encratahq/encrata-cli/releases/download/v0.4.1/encrata_0.4.1_linux_arm64.tar.gz"
-      sha256 "d6ed69160cd61d15dfb8477662b133da1c9c54a70b29407ebe2998ebde8c198d"
+      sha256 "4bf7feda45d4c5a9f70aa0358501d99f286f4e96435580a686353cbb45e11088"
       define_method(:install) do
         bin.install "encrata"
       end
