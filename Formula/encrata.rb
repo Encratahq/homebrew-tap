@@ -5,21 +5,21 @@
 class Encrata < Formula
   desc "Intelligence lookups from your terminal — email, phone, IP, domain, and OSINT"
   homepage "https://encrata.com"
-  version "0.12.1"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Encratahq/encrata-cli/releases/download/v0.12.1/encrata_0.12.1_darwin_amd64.tar.gz"
-      sha256 "4318d7dd74ee42adaec58e2cba2a20f490fed5f2257c0a5e6266ce5c1cb7302d"
+      url "https://github.com/Encratahq/encrata-cli/releases/download/v0.13.0/encrata_0.13.0_darwin_amd64.tar.gz"
+      sha256 "0f2381e304d13efadf0a6fe568f9fc581459a6c5ea43a22d58466b2f796e6d34"
 
       define_method(:install) do
         bin.install "encrata"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Encratahq/encrata-cli/releases/download/v0.12.1/encrata_0.12.1_darwin_arm64.tar.gz"
-      sha256 "dc24ab31f4b3185abde7839eaf30c46ca581aab8249a3afed930e72cc8be5a79"
+      url "https://github.com/Encratahq/encrata-cli/releases/download/v0.13.0/encrata_0.13.0_darwin_arm64.tar.gz"
+      sha256 "6eaa765ab755c2ed48ad3410295624045161ff9aba16759afc15539204a7a78c"
 
       define_method(:install) do
         bin.install "encrata"
@@ -29,15 +29,15 @@ class Encrata < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Encratahq/encrata-cli/releases/download/v0.12.1/encrata_0.12.1_linux_amd64.tar.gz"
-      sha256 "443ba4f699a11f12d171026c79dece2823c62921bfbd5b003daeaee84dc71cc9"
+      url "https://github.com/Encratahq/encrata-cli/releases/download/v0.13.0/encrata_0.13.0_linux_amd64.tar.gz"
+      sha256 "262aee2a7fb77549fd8b5d5a693dc89008c50cfe2f9ebaa9c94bf8739f0aead7"
       define_method(:install) do
         bin.install "encrata"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Encratahq/encrata-cli/releases/download/v0.12.1/encrata_0.12.1_linux_arm64.tar.gz"
-      sha256 "8e27e956217e275380888118a64ddb8b5a17a76829d125d7c8f9f12835508d9e"
+      url "https://github.com/Encratahq/encrata-cli/releases/download/v0.13.0/encrata_0.13.0_linux_arm64.tar.gz"
+      sha256 "6657194d91cede70f83ed0e8138d445e3ea784d34dc67d6a1dbe41f675b9901f"
       define_method(:install) do
         bin.install "encrata"
       end
